@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pkg_grpc;
+
+service SecurityService {
+
+  rpc ReceiveMessages (ClientMessage) returns (MessageReply) {}
+}
+
+message ClientMessage {
+  string message = 1;
+}
+
+message MessageReply {
+  string message = 1;
+}
