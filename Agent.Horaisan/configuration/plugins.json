@@ -1,0 +1,31 @@
+{
+	"version": "0.1.0",
+	"name": "Security.Dionysus",
+	"type":"Agent Entry",
+	"packages": [{
+		"import": {
+			"pkg": "plugins/Plugin.RPC",
+			"name": "Plugin.RPC",
+			"export": "exec",
+			"check_md5":""
+		},
+		"register": "Net"
+	}, {
+		"import": {
+			"pkg": "plugins/Plugin.Example",
+			"name": "Plugin.Example",
+			"export": "exec",
+			"check_md5":""
+		},
+		"register": "N/A"
+	}, {
+		"import": {
+			"pkg": "plugins/Plugin.Garuda",
+			"name": "Plugin.Garuda",
+			"export": "exec",
+			"check_md5":""
+		},
+		"register": "N/A"
+	}],
+	"discription": "@CopyRight author 2023/07/26 tonoshiki piyoma"
+}
